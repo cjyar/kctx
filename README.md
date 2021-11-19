@@ -11,9 +11,9 @@ Here's the bad scenario we're trying to prevent, if you have 2 windows open, and
 ```
 $ kubectl config use-context dev1                    |
 (dev1) $ kubectl apply -f ingress-nginx/             |
+(dev1) $ do some stuff                               |
                                                      | $ kubectl config use-context prod
                                                      | (prod) $ kubectl get pods or something
-(dev1) $ do some stuff                               |
 (dev1) $ kubectl delete -f ingress-nginx/            |
 (prod) $ oopsie                                      |
 ```
