@@ -52,21 +52,3 @@ function kctx() {
         ;;
     esac
 }
-
-# function kctx() {
-#   _die() {
-#     printf '%s\n' "$1" >&2
-#     return 1
-#   }  
-     
-#   context="$1"
-#   context_config_dir="$HOME/.kube/ctxcfg"
-     
-#   if [ -f "${context_config_dir}/${context}" ] ; then
-#     export KUBECONFIG="${context_config_dir}/${context}"
-#   else
-#     echo "Specify a context: kctx <context>"
-#     ls -1 $context_config_dir
-#     _die "${context} not found in ${context_config_dir}"·
-#   fi 
-# }
