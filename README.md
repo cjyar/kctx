@@ -20,6 +20,7 @@ $ kubectl config use-context dev1                    |
 
 # Setup
 
+0. Install [yq](http://mikefarah.github.io/yq/#install).
 1. Download `kctx.sh` and save it somewhere.
 2. Modify your `.bashrc` or `.bash_profile` to include this line:
     ```
